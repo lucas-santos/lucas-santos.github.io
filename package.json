@@ -2,6 +2,7 @@
   "name": "1chooo-com-web",
   "version": "0.15.0",
   "private": true,
+  "packageManager": "pnpm@11.21.0",
   "type": "module",
   "license": "CC-BY-4.0",
   "author": {
