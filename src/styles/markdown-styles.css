@@ -1,0 +1,269 @@
+.markdown {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--light-gray);
+}
+
+.markdown .heading-link {
+  display: inline-block;
+  color: var(--white-1);
+  text-decoration: none;
+}
+
+.markdown .heading-link:hover {
+  text-decoration: underline;
+  color: var(--light-gray);
+  text-decoration-color: var(--orange-yellow-crayola);
+}
+
+.markdown p,
+.markdown ul,
+.markdown ol,
+.markdown blockquote {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.markdown ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.markdown ol {
+  list-style: decimal;
+  padding-left: 1.5rem;
+}
+
+.markdown p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: var(--light-gray);
+}
+
+.markdown mark {
+  color: var(--orange-yellow-crayola);
+  background-color: transparent;
+}
+
+.markdown a {
+  display: inline;
+  color: var(--orange-yellow-crayola);
+  text-decoration: underline;
+}
+
+.markdown a:hover {
+  opacity: 0.7;
+}
+
+.markdown h1 {
+  font-size: 2.25rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.markdown h2 {
+  font-size: 1.875rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  line-height: 1.375;
+  font-weight: 600;
+}
+
+.markdown h3 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.375;
+  font-weight: 500;
+}
+
+.markdown :not(pre) > code {
+  font-size: 0.875rem;
+  color: #f8f8f2;
+  background-color: #282a36;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.markdown blockquote {
+  padding-left: 1rem;
+  border-left: 0.25rem solid;
+  border-color: var(--light-gray-70);
+}
+
+.markdown hr {
+  border: 0.125em solid var(--light-gray-70);
+  border-radius: 1rem;
+  height: calc(0.25em);
+}
+
+.markdown .image-with-caption {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.markdown .image-with-caption img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+  border-radius: 1rem;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+  position: relative;
+  overflow: hidden;
+  max-height: 200px;
+}
+
+.markdown .image-caption {
+  margin-top: 0.75rem;
+  font-size: 0.875rem;
+  color: var(--light-gray-70);
+  font-style: italic;
+  line-height: 1.4;
+  max-width: 100%;
+}
+
+/* Alternative styling options */
+.markdown .image-caption.small {
+  font-size: 0.75rem;
+}
+
+.markdown .image-caption.bold {
+  font-weight: 600;
+  font-style: normal;
+}
+
+.markdown [data-highlighted-line] {
+  background: rgba(200, 200, 255, 0.1);
+  @apply border-l-blue-400;
+}
+
+.markdown [data-highlighted-chars] {
+  @apply bg-zinc-600/50 rounded;
+  box-shadow: 0 0 0 4px rgb(82 82 91 / 0.5);
+}
+
+.markdown [data-chars-id] {
+  @apply shadow-none p-1 border-b-2;
+}
+
+.markdown [data-chars-id] span {
+  @apply !text-inherit;
+}
+
+.markdown [data-chars-id="v"] {
+  @apply !text-pink-300 bg-rose-800/50 border-b-pink-600 font-bold;
+}
+
+.markdown [data-chars-id="s"] {
+  @apply !text-yellow-300 bg-yellow-800/50 border-b-yellow-600 font-bold;
+}
+
+.markdown [data-chars-id="i"] {
+  @apply !text-purple-200 bg-purple-800/50 border-b-purple-600 font-bold;
+}
+
+.markdown code[data-line-numbers] {
+  counter-reset: line;
+}
+
+.markdown code[data-line-numbers] > [data-line]::before {
+  counter-increment: line;
+  content: counter(line);
+
+  display: inline-block;
+  width: 1rem;
+  margin-right: 1rem;
+  text-align: right;
+  color: gray;
+}
+
+.markdown code[data-line-numbers-max-digits="2"] > [data-line]::before {
+  width: 1.25rem;
+}
+
+.markdown code[data-line-numbers-max-digits="3"] > [data-line]::before {
+  width: 1.75rem;
+}
+
+.markdown code[data-line-numbers-max-digits="4"] > [data-line]::before {
+  width: 2.25rem;
+}
+
+@media (min-width: 640px) {
+  .markdown .image-with-caption img {
+    max-height: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .markdown .image-with-caption img {
+    max-height: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .markdown .image-with-caption img {
+    max-height: 400px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .markdown .image-with-caption img {
+    max-height: 400px;
+  }
+}
+
+pre {
+  font-size: var(--fs-6);
+  padding: 15px;
+  border-radius: 14px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  white-space: pre;
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+  position: relative;
+}
+
+/* 美化滾動條 (Webkit 瀏覽器) */
+pre::-webkit-scrollbar {
+  height: 8px;
+}
+
+pre::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+pre::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+pre::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media (min-width: 768px) {
+  pre {
+    white-space: pre;
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  pre {
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow-x: hidden;
+  }
+}

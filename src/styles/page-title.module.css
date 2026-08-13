@@ -1,0 +1,37 @@
+.pageTitle {
+  font-weight: var(--fw-600);
+  position: relative;
+  padding-bottom: 7px;
+  margin-bottom: 30px;
+  font-size: var(--fs-1);
+  color: var(--white-2);
+  text-transform: capitalize;
+}
+
+.pageTitle::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 3px;
+  background: var(--text-gradient-yellow);
+  border-radius: 3px;
+}
+
+@media (min-width: 580px) {
+  .pageTitle {
+    padding-bottom: 15px;
+  }
+
+  .pageTitle::after {
+    width: 40px;
+    height: 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .pageTitle {
+    padding-bottom: 20px;
+  }
+}

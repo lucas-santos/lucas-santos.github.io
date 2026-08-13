@@ -1,0 +1,44 @@
+.iconBox {
+  z-index: 1;
+  background: var(--border-gradient-onyx);
+  color: var(--orange-yellow-crayola);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  box-shadow: var(--shadow-1);
+  position: relative;
+  border-radius: 12px;
+  width: 40px;
+  height: 40px;
+}
+
+.iconBox::before {
+  z-index: -1;
+  background: var(--eerie-black-1);
+  border-radius: inherit;
+  content: "";
+  position: absolute;
+  inset: 1px;
+}
+
+@media (min-width: 580px) {
+  .iconBox {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (min-width: 768px) {
+  .iconBox {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .iconBox {
+    width: 48px;
+    height: 48px;
+  }
+}

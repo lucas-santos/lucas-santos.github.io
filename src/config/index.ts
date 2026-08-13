@@ -1,0 +1,314 @@
+import { ICON_NAMES } from "@/components/icons";
+
+import { Config } from "@/types/config";
+
+const config: Config = {
+  avatar: "/images/profile.webp",
+  title: "Chun-Ho (Hugo) Lin - 1chooo",
+  description:
+    "I am a first-year M.S. student in Computer Science at the [USC Viterbi School of Engineering](https://viterbischool.usc.edu/) ✌️. I graduated with a B.S. in Atmospheric Sciences from the [National Central University](https://www.ncu.edu.tw/) 🐿️.",
+  author: "Chun-Ho (Hugo) Lin - 1chooo",
+  keywords: [
+    "Chun-Ho (Hugo) Lin",
+    "1chooo",
+    "Software Engineering",
+    "University of Southern California",
+    "National Central University",
+  ],
+  status: "Fight on ✌️",
+  siteURL: "https://lucas-santos.github.io",
+  contacts: [
+    {
+      icon: ICON_NAMES.MAP_PIN_LU,
+      title: "Location",
+      content: "Los Angeles, CA 🇺🇸",
+    },
+    {
+      icon: ICON_NAMES.MAIL_LU,
+      title: "Email",
+      link: "mailto:hugo@1chooo.com",
+      content: "hugo@1chooo.com",
+    },
+    {
+      icon: ICON_NAMES.GITHUB_LU,
+      title: "GitHub",
+      link: "https://github.com/1chooo",
+      content: "@1chooo",
+    },
+    {
+      icon: ICON_NAMES.LINKEDIN_LU,
+      title: "LinkedIn",
+      link: "https://www.linkedin.com/in/1chooo/",
+      content: "in/1chooo",
+    },
+  ],
+  homeMetaData: {
+    metadataBase: new URL(
+      process.env.NODE_ENV === "production"
+        ? "https://v0.1chooo.com"
+        : "http://localhost:3000",
+    ),
+    title: "Chun-Ho (Hugo) Lin - 1chooo",
+    description:
+      "I am a first-year M.S. student in Computer Science at the [USC Viterbi School of Engineering](https://viterbischool.usc.edu/) ✌️. I graduated with a B.S. in Atmospheric Sciences from the [National Central University](https://www.ncu.edu.tw/) 🐿️.",
+    authors: [{ name: "Chun-Ho (Hugo) Lin" }],
+    creator: "Chun-Ho (Hugo) Lin",
+    keywords: [
+      "Chun-Ho (Hugo) Lin",
+      "1chooo",
+      "Software Engineering",
+      "University of Southern California",
+      "National Central University",
+    ],
+    openGraph: {
+      url: "https://v0.1chooo.com/",
+      type: "website",
+      siteName: "Chun-Ho (Hugo) Lin - 1chooo",
+      title: "Chun-Ho (Hugo) Lin - 1chooo",
+      locale: "en_US",
+      description:
+        "I am a first-year M.S. student in Computer Science at the [USC Viterbi School of Engineering](https://viterbischool.usc.edu/) ✌️. I graduated with a B.S. in Atmospheric Sciences from the [National Central University](https://www.ncu.edu.tw/) 🐿️.",
+      images: [
+        {
+          url: "/opengraph-image",
+          width: 1920,
+          height: 1080,
+          alt: "Chun-Ho (Hugo) Lin - 1chooo",
+        },
+      ],
+    },
+    manifest: "/manifest.json",
+    twitter: {
+      site: "@1chooo___",
+      card: "summary_large_image",
+      title: "Chun-Ho (Hugo) Lin - 1chooo",
+      description:
+        "I am a first-year M.S. student in Computer Science at the [USC Viterbi School of Engineering](https://viterbischool.usc.edu/) ✌️. I graduated with a B.S. in Atmospheric Sciences from the [National Central University](https://www.ncu.edu.tw/) 🐿️.",
+      images: [
+        {
+          url: "/twitter-image",
+          width: 1920,
+          height: 1080,
+          alt: "Chun-Ho (Hugo) Lin - 1chooo",
+        },
+      ],
+    },
+    icons: {
+      icon: "/favicon.ico",
+      shortcut: "/favicon.ico",
+      apple: [
+        {
+          url: "/favicon.ico",
+          sizes: "192x192",
+          type: "image/x-icon",
+        },
+      ],
+    },
+  },
+  about: {
+    firstName: "Chun-Ho",
+    lastName: "Lin",
+    middleName: "",
+    preferredName: "Hugo",
+    pronouns: "He/Him",
+    githubUsername: "1chooo",
+    lifestyles: [
+      {
+        icon: ICON_NAMES.GITHUB_LU,
+        title: "Open Source",
+        text: "Actively contributing to open source projects on GitHub.",
+      },
+      {
+        icon: ICON_NAMES.PENCIL_LU,
+        title: "Storytelling",
+        text: "Love to share my knowledge and experience with others.",
+      },
+      {
+        icon: ICON_NAMES.GOAL,
+        title: "Workouts",
+        text: "Basketball and weight training defines my active workout lifestyle.",
+      },
+      {
+        icon: ICON_NAMES.PHOTO,
+        title: "Photography",
+        text: "Sky brings freedom; streets, a reminder of others' contributions.",
+      },
+    ],
+    techStacks: {
+      programmingLanguages: [
+        { name: "Python", icon: ICON_NAMES.PYTHON },
+        { name: "TypeScript", icon: ICON_NAMES.TYPESCRIPT },
+        { name: "Golang", icon: ICON_NAMES.GOLANG },
+        { name: "C++", icon: ICON_NAMES.CPP },
+        { name: "Java", icon: ICON_NAMES.JAVA },
+        { name: "JavaScript", icon: ICON_NAMES.JAVASCRIPT },
+        { name: "LaTeX", icon: ICON_NAMES.LATEX },
+        { name: "Markdown", icon: ICON_NAMES.MARKDOWN },
+        { name: "Astro", icon: ICON_NAMES.ASTRO },
+        { name: "Terraform", icon: ICON_NAMES.TERRAFORM },
+      ],
+      frameworks: [
+        { name: "React", icon: ICON_NAMES.REACT },
+        { name: "FastAPI", icon: ICON_NAMES.FASTAPI },
+        { name: "Flask", icon: ICON_NAMES.FLASK },
+        { name: "Redis", icon: ICON_NAMES.REDIS },
+        { name: "Linux Terminal", icon: ICON_NAMES.TERMINAL_LINUX },
+        { name: "AWS", icon: ICON_NAMES.AWS },
+        { name: "Next.js", icon: ICON_NAMES.NEXTJS },
+        { name: "Docker", icon: ICON_NAMES.DOCKER },
+        { name: "MySQL", icon: ICON_NAMES.MYSQL },
+        { name: "Django", icon: ICON_NAMES.DJANGO },
+        { name: "Kubernetes", icon: ICON_NAMES.KUBERNETES },
+        { name: "Postman", icon: ICON_NAMES.POSTMAN },
+        { name: "Azure", icon: ICON_NAMES.AZURE },
+      ],
+    },
+  },
+  shikiTheme: {
+    defaultColor: "dark",
+    light: "github-dark",
+    dark: "github-dark",
+  },
+  jsonLdPerson: {
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "@id": "https://v0.1chooo.com/#person",
+    name: "Chun-Ho (Hugo) Lin",
+    givenName: "Chun-Ho",
+    familyName: "Lin",
+    additionalName: "Hugo",
+    gender: "male",
+    birthPlace: "New Taipei, TW",
+    nationality: {
+      "@type": "Country",
+      name: "Taiwan",
+      alternateName: "TW",
+    },
+    alumniOf: [
+      {
+        "@type": "CollegeOrUniversity",
+        name: "University of Southern California",
+        sameAs: "https://usc.edu",
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        name: "National Central University",
+        sameAs: "https://www.ncu.edu.tw/",
+      },
+    ],
+    jobTitle: "Software Engineer",
+    skills: "Software Engineering, Web Development, Open Source",
+    image: "https://v0.1chooo.com/images/profile.webp",
+    url: "https://v0.1chooo.com",
+    sameAs: [
+      "https://www.linkedin.com/in/1chooo/",
+      "http://github.com/1chooo",
+      "https://medium.com/@1chooo",
+    ],
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Los Angeles",
+      addressRegion: "CA",
+      addressCountry: "USA",
+    },
+  },
+  giscusConfig: {
+    id: "comments",
+    repo: "1chooo/1chooo.com",
+    repoId: process.env.NEXT_PUBLIC_GISCUS_REPO_ID || "",
+    category: "General",
+    categoryId: process.env.NEXT_PUBLIC_GISCUS_CONFIG_CATEGORY_ID || "",
+    mapping: "pathname",
+    term: "Welcome to @giscus/react component!",
+    reactionsEnabled: "1",
+    emitMetadata: "1",
+    inputPosition: "bottom",
+    theme: "dark_tritanopia",
+    lang: "en",
+    loading: "lazy",
+  },
+  web3formsAccessKey: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || "",
+  analytics: {
+    googleAnalyticId: process.env.NEXT_PUBLIC_GA_ID || "",
+    googleTagManagerId: process.env.NEXT_PUBLIC_GTM_ID || "",
+    umamiWebsiteId: process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID || "",
+    umamiUrl: process.env.NEXT_PUBLIC_UMAMI_URL || "",
+  },
+  robots: {
+    rules: [
+      {
+        userAgent: "*",
+      },
+    ],
+    sitemap: "https://v0.1chooo.com/sitemap.xml",
+    host: "https://v0.1chooo.com",
+  },
+  llmsTxtContent: `# 1chooo.com
+
+## Section Name
+
+- [About](https://v0.1chooo.com): A brief introduction to the site and its creator, showcasing skills and interests.
+- [Resume](https://v0.1chooo.com/resume): A detailed resume highlighting professional experience, education, and skills.
+- [Blog](https://v0.1chooo.com/blog): A collection of articles and tutorials on web development, programming, and technology.
+- [Project](https://v0.1chooo.com/project): Showcases various projects and contributions.
+
+## Optional
+
+- [Source Code](https://github.com/1chooo/portfolio): The source code for the 1chooo.com website is available on GitHub.
+`,
+  llmsFullTxtContent: `# 1chooo.com
+
+## Section Name
+
+- [About](https://v0.1chooo.com): A brief introduction to the site and its creator, showcasing skills and interests.
+- [Resume](https://v0.1chooo.com/resume): A detailed resume highlighting professional experience, education, and skills.
+- [Blog](https://v0.1chooo.com/blog): A collection of articles and tutorials on web development, programming, and technology.
+- [Project](https://v0.1chooo.com/project): Showcases various projects and contributions.
+
+## Optional
+
+- [Source Code](https://github.com/1chooo/portfolio): The source code for the 1chooo.com website is available on GitHub.
+`,
+  techStacks: {
+    frontend: [
+      "typescript",
+      "react",
+      "nextjs",
+      "tailwindcss",
+      "vitest",
+      "shadcnui",
+      "googleanalytics",
+    ],
+    backend: [
+      "python",
+      "aws",
+      "django",
+      "golang",
+      "docker",
+      "fastapi",
+      "github",
+    ],
+    database: ["redis", "supabase", "firebase", "dynamodb"],
+  },
+  rssOptions: {
+    title: "Chun-Ho (Hugo) Lin - 1chooo",
+    description:
+      "I am a first-year M.S. student in Computer Science at the [USC Viterbi School of Engineering](https://viterbischool.usc.edu/) ✌️. I graduated with a B.S. in Atmospheric Sciences from the [National Central University](https://www.ncu.edu.tw/) 🐿️.",
+    site_url: "https://v0.1chooo.com",
+    feed_url: "https://v0.1chooo.com/rss.xml",
+    language: "en-US",
+    docs: "https://docs.1chooo.com",
+    image_url: "https://docs.1chooo.com/images/cover-with-1chooo-com.png",
+    managingEditor: "hugo@1chooo.com (Chun-Ho Lin)",
+    webMaster: "hugo@1chooo.com (Chun-Ho Lin)",
+    copyright: "© 2025 Chun-Ho (Hugo) Lin",
+    categories: [
+      "Technology",
+      "Software Development",
+      "Web Development",
+      "Programming",
+    ],
+  },
+};
+
+export default config;

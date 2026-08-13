@@ -1,0 +1,38 @@
+.gradientCard {
+  padding: 20px;
+  z-index: 1;
+  position: relative;
+  box-shadow: var(--shadow-2);
+  border-radius: 16px;
+  background: var(--border-gradient-onyx);
+}
+
+.gradientCard::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+@media (min-width: 580px) {
+  .gradientCard {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 30px;
+  }
+}
+
+@media (min-width: 580px) and (max-width: 639px) {
+  .gradientCard {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .gradientCard > div:last-child {
+    text-align: left;
+  }
+}
