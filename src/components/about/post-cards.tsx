@@ -1,10 +1,9 @@
 "use client";
 
-import React, { Suspense } from "react";
+import React from "react";
 
 import { useRouter } from "next/navigation";
 import { sendGTMEvent } from "@next/third-parties/google";
-import { ViewCounter } from "@/app/(home)/blog/view-counter";
 
 import AnimatedShinyText from "@/components/magicui/animated-shiny-text";
 import { BlurFade } from "@/components/magicui/blur-fade";
@@ -152,9 +151,6 @@ function PostCard({ post, index }: PostCardProps) {
               ></span>
             </>
           )}
-          <Suspense fallback={<div>Loading views...</div>}>
-            <ViewCounter slug={post.slug} />
-          </Suspense>
         </div>
       </div>
     </BlurFadeLi>

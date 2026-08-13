@@ -17,6 +17,9 @@
 /build
 /out
 
+# personal documents (not for the public repo)
+/Profile.pdf
+
 # misc
 .DS_Store
 .env

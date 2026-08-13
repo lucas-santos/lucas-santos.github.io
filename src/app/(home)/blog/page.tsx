@@ -91,7 +91,7 @@ export default async function MdxBlog() {
                   <Image
                     src={
                       post.thumbnail ||
-                      "https://docs.1chooo.com/images/cover-with-1chooo-com.png"
+                      "https://lucas-santos.github.io/images/opengraph-image.png"
                     }
                     alt={post.title || "Blog post image"}
                     width={960}
@@ -99,7 +99,7 @@ export default async function MdxBlog() {
                     priority={false}
                     placeholder="blur"
                     loading="eager"
-                    blurDataURL="https://docs.1chooo.com/images/cover-with-1chooo-com.png"
+                    blurDataURL="https://lucas-santos.github.io/images/opengraph-image.png"
                   />
                 </figure>
                 <div className={cn(styles.content)}>

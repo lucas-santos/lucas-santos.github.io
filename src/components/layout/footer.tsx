@@ -7,8 +7,8 @@ function Footer() {
     <footer className="footer">
       <div className="copyright">
         &copy; {new Date().getFullYear()}{" "}
-        <Link className="footer-link" href="https://v0.1chooo.com">
-          1chooo
+        <Link className="footer-link" href="https://github.com/lucas-santos">
+          Lucas Santos
         </Link>
       </div>
       <div className="footer-links">
@@ -25,11 +25,11 @@ function Footer() {
         </Link>
         <Link
           className="footer-link"
-          href="https://docs.1chooo.com"
+          href="https://github.com/1chooo/vcard"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Docs
+          Template by 1chooo
         </Link>
       </div>
     </footer>

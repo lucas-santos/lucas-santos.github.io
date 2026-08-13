@@ -1,9 +1,7 @@
 import { ImageResponse } from "next/og";
-import { join } from "node:path";
-import { readFile } from "node:fs/promises";
 
 export const dynamic = "force-static";
-export const alt = "Chun-Ho (Hugo) Lin - 1chooo";
+export const alt = "Lucas Santos";
 export const size = {
   width: 1920,
   height: 1080,
@@ -11,11 +9,6 @@ export const size = {
 export const contentType = "image/png";
 
 export default async function Image() {
-  const logoData = await readFile(
-    join(process.cwd(), "public", "images", "opengraph-image.png"),
-  );
-  const imagePath = `data:image/png;base64,${logoData.toString("base64")}`;
-
   return new ImageResponse(
     (
       <div
@@ -24,14 +17,34 @@ export default async function Image() {
           width: "100%",
           display: "flex",
           flexDirection: "column",
-          alignItems: "center",
+          alignItems: "flex-start",
           justifyContent: "center",
-          backgroundImage: `url(${imagePath})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
+          backgroundColor: "#1f2937",
+          padding: "0 160px",
         }}
-      ></div>
+      >
+        <div
+          style={{
+            display: "flex",
+            fontSize: 130,
+            fontWeight: 700,
+            color: "white",
+            lineHeight: "140px",
+          }}
+        >
+          Lucas Santos
+        </div>
+        <div
+          style={{
+            display: "flex",
+            fontSize: 48,
+            color: "#FFDA6B",
+            marginTop: 24,
+          }}
+        >
+          Mobile Developer · React Native
+        </div>
+      </div>
     ),
     {
       ...size,

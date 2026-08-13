@@ -5,33 +5,7 @@ import clsx from "clsx";
 import { AnimatePresence, motion } from "motion/react";
 import Image from "next/image";
 
-const travelImages: { img: string; title: string; alt: string }[] = [
-  {
-    img: "/images/photo/usc.webp",
-    title: "USC",
-    alt: "",
-  },
-  {
-    img: "/images/photo/half-dome.webp",
-    title: "Yosemite Half Dome",
-    alt: "",
-  },
-  {
-    img: "/images/photo/vernal-falls.webp",
-    title: "Yosemite Vernal Falls",
-    alt: "",
-  },
-  {
-    img: "/images/photo/ucla.webp",
-    title: "UCLA",
-    alt: "",
-  },
-  {
-    img: "/images/photo/ucsd.webp",
-    title: "UCSD",
-    alt: "",
-  },
-];
+const travelImages: { img: string; title: string; alt: string }[] = [];
 
 const possibleRotations = [1.3, -1.3, 1.3, -1.3, 1.3, -1.3];
 

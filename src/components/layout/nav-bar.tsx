@@ -117,6 +117,7 @@ const NavBar = () => {
           </ViewTransitionsProgressBarLink>
         </li>
 
+        {/* Project and Blog are hidden until there's real content to show.
         <li className="py-2 navbar-item">
           <ViewTransitionsProgressBarLink
             href="/project"
@@ -190,6 +191,7 @@ const NavBar = () => {
             )}
           </ViewTransitionsProgressBarLink>
         </li>
+        */}
 
         {/* <li className="py-2 navbar-item">
           <ViewTransitionsProgressBarLink

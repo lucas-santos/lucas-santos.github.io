@@ -42,7 +42,7 @@ function CaptionImage({
         <Image
           className={cn(styles.responsiveImage)}
           src={src}
-          alt={alt ?? "Chun-Ho (Hugo) Lin"}
+          alt={alt ?? "Lucas Santos"}
           fill
           quality={quality}
           priority={priority}

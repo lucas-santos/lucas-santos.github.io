@@ -100,7 +100,7 @@ function HomeLayout({ children }: { readonly children: React.ReactNode }) {
             id="application/ld+json"
             type="application/ld+json"
             dangerouslySetInnerHTML={addJsonLd()}
-            key="1chooo-website-jsonld"
+            key="lucas-santos-website-jsonld"
           />
           <VercelAnalytic />
           <UmamiAnalytic umamiWebsiteId={umamiWebsiteId} umamiUrl={umamiUrl} />

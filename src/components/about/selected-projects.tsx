@@ -74,7 +74,7 @@ function SelectedProjects({
                 </div>
                 <Image
                   src={post.thumbnail}
-                  alt={post.excerpt || "Chun-Ho (Hugo) Lin - Selected Project"}
+                  alt={post.excerpt || "Lucas Santos - Selected Project"}
                   width={480}
                   height={270}
                   priority

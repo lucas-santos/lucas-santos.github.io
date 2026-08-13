@@ -11,7 +11,7 @@ interface GitHubMapProps {
   year?: number | "last";
 }
 
-function GitHubMap({ year = "last", username = "1chooo" }: GitHubMapProps) {
+function GitHubMap({ year = "last", username = "lucas-santos" }: GitHubMapProps) {
   const yellowTheme = {
     light: ["#EBEBEB", "#FFDA6B"],
     dark: ["#383838", "#FFDA6B"],

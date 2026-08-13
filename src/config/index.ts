@@ -3,93 +3,95 @@ import { ICON_NAMES } from "@/components/icons";
 import { Config } from "@/types/config";
 
 const config: Config = {
-  avatar: "/images/profile.webp",
-  title: "Chun-Ho (Hugo) Lin - 1chooo",
+  avatar: "/images/profile.svg",
+  title: "Lucas Santos",
   description:
-    "I am a first-year M.S. student in Computer Science at the [USC Viterbi School of Engineering](https://viterbischool.usc.edu/) ✌️. I graduated with a B.S. in Atmospheric Sciences from the [National Central University](https://www.ncu.edu.tw/) 🐿️.",
-  author: "Chun-Ho (Hugo) Lin - 1chooo",
+    "Desenvolvedor mobile com foco em React Native, atuando no desenvolvimento e manutenção de aplicativos corporativos. Experiência com TypeScript, integração de APIs REST e React/Next.js.",
+  author: "Lucas Santos",
   keywords: [
-    "Chun-Ho (Hugo) Lin",
-    "1chooo",
-    "Software Engineering",
-    "University of Southern California",
-    "National Central University",
+    "Lucas Santos",
+    "Mobile Developer",
+    "React Native",
+    "React.js",
+    "Next.js",
+    "TypeScript",
   ],
-  status: "Fight on ✌️",
+  status: "Building mobile apps 📱",
   siteURL: "https://lucas-santos.github.io",
   contacts: [
     {
       icon: ICON_NAMES.MAP_PIN_LU,
       title: "Location",
-      content: "Los Angeles, CA 🇺🇸",
+      content: "Natal, Rio Grande do Norte, Brazil 🇧🇷",
     },
     {
       icon: ICON_NAMES.MAIL_LU,
       title: "Email",
-      link: "mailto:hugo@1chooo.com",
-      content: "hugo@1chooo.com",
+      link: "mailto:lucassantos_dev@outlook.com",
+      content: "lucassantos_dev@outlook.com",
     },
     {
       icon: ICON_NAMES.GITHUB_LU,
       title: "GitHub",
-      link: "https://github.com/1chooo",
-      content: "@1chooo",
+      link: "https://github.com/lucas-santos",
+      content: "@lucas-santos",
     },
     {
       icon: ICON_NAMES.LINKEDIN_LU,
       title: "LinkedIn",
-      link: "https://www.linkedin.com/in/1chooo/",
-      content: "in/1chooo",
+      link: "https://www.linkedin.com/in/lucas-santosengsoft",
+      content: "in/lucas-santosengsoft",
     },
   ],
   homeMetaData: {
     metadataBase: new URL(
       process.env.NODE_ENV === "production"
-        ? "https://v0.1chooo.com"
+        ? "https://lucas-santos.github.io"
         : "http://localhost:3000",
     ),
-    title: "Chun-Ho (Hugo) Lin - 1chooo",
+    title: "Lucas Santos",
     description:
-      "I am a first-year M.S. student in Computer Science at the [USC Viterbi School of Engineering](https://viterbischool.usc.edu/) ✌️. I graduated with a B.S. in Atmospheric Sciences from the [National Central University](https://www.ncu.edu.tw/) 🐿️.",
-    authors: [{ name: "Chun-Ho (Hugo) Lin" }],
-    creator: "Chun-Ho (Hugo) Lin",
+      "Desenvolvedor mobile com foco em React Native, atuando no desenvolvimento e manutenção de aplicativos corporativos. Experiência com TypeScript, integração de APIs REST e React/Next.js.",
+    authors: [{ name: "Lucas Santos" }],
+    creator: "Lucas Santos",
     keywords: [
-      "Chun-Ho (Hugo) Lin",
-      "1chooo",
-      "Software Engineering",
-      "University of Southern California",
-      "National Central University",
+      "Lucas Santos",
+      "Mobile Developer",
+      "React Native",
+      "React.js",
+      "Next.js",
+      "TypeScript",
     ],
     openGraph: {
-      url: "https://v0.1chooo.com/",
+      url: "https://lucas-santos.github.io/",
       type: "website",
-      siteName: "Chun-Ho (Hugo) Lin - 1chooo",
-      title: "Chun-Ho (Hugo) Lin - 1chooo",
-      locale: "en_US",
+      siteName: "Lucas Santos",
+      title: "Lucas Santos",
+      locale: "pt_BR",
       description:
-        "I am a first-year M.S. student in Computer Science at the [USC Viterbi School of Engineering](https://viterbischool.usc.edu/) ✌️. I graduated with a B.S. in Atmospheric Sciences from the [National Central University](https://www.ncu.edu.tw/) 🐿️.",
+        "Desenvolvedor mobile com foco em React Native, atuando no desenvolvimento e manutenção de aplicativos corporativos.",
       images: [
         {
           url: "/opengraph-image",
           width: 1920,
           height: 1080,
-          alt: "Chun-Ho (Hugo) Lin - 1chooo",
+          alt: "Lucas Santos",
         },
       ],
     },
     manifest: "/manifest.json",
     twitter: {
-      site: "@1chooo___",
+      site: "@lucas-santos",
       card: "summary_large_image",
-      title: "Chun-Ho (Hugo) Lin - 1chooo",
+      title: "Lucas Santos",
       description:
-        "I am a first-year M.S. student in Computer Science at the [USC Viterbi School of Engineering](https://viterbischool.usc.edu/) ✌️. I graduated with a B.S. in Atmospheric Sciences from the [National Central University](https://www.ncu.edu.tw/) 🐿️.",
+        "Desenvolvedor mobile com foco em React Native, atuando no desenvolvimento e manutenção de aplicativos corporativos.",
       images: [
         {
           url: "/twitter-image",
           width: 1920,
           height: 1080,
-          alt: "Chun-Ho (Hugo) Lin - 1chooo",
+          alt: "Lucas Santos",
         },
       ],
     },
@@ -106,61 +108,21 @@ const config: Config = {
     },
   },
   about: {
-    firstName: "Chun-Ho",
-    lastName: "Lin",
+    firstName: "Lucas",
+    lastName: "Santos",
     middleName: "",
-    preferredName: "Hugo",
-    pronouns: "He/Him",
-    githubUsername: "1chooo",
-    lifestyles: [
-      {
-        icon: ICON_NAMES.GITHUB_LU,
-        title: "Open Source",
-        text: "Actively contributing to open source projects on GitHub.",
-      },
-      {
-        icon: ICON_NAMES.PENCIL_LU,
-        title: "Storytelling",
-        text: "Love to share my knowledge and experience with others.",
-      },
-      {
-        icon: ICON_NAMES.GOAL,
-        title: "Workouts",
-        text: "Basketball and weight training defines my active workout lifestyle.",
-      },
-      {
-        icon: ICON_NAMES.PHOTO,
-        title: "Photography",
-        text: "Sky brings freedom; streets, a reminder of others' contributions.",
-      },
-    ],
+    preferredName: "Lucas",
+    pronouns: "",
+    githubUsername: "lucas-santos",
+    lifestyles: [],
     techStacks: {
       programmingLanguages: [
-        { name: "Python", icon: ICON_NAMES.PYTHON },
         { name: "TypeScript", icon: ICON_NAMES.TYPESCRIPT },
-        { name: "Golang", icon: ICON_NAMES.GOLANG },
-        { name: "C++", icon: ICON_NAMES.CPP },
-        { name: "Java", icon: ICON_NAMES.JAVA },
         { name: "JavaScript", icon: ICON_NAMES.JAVASCRIPT },
-        { name: "LaTeX", icon: ICON_NAMES.LATEX },
-        { name: "Markdown", icon: ICON_NAMES.MARKDOWN },
-        { name: "Astro", icon: ICON_NAMES.ASTRO },
-        { name: "Terraform", icon: ICON_NAMES.TERRAFORM },
       ],
       frameworks: [
         { name: "React", icon: ICON_NAMES.REACT },
-        { name: "FastAPI", icon: ICON_NAMES.FASTAPI },
-        { name: "Flask", icon: ICON_NAMES.FLASK },
-        { name: "Redis", icon: ICON_NAMES.REDIS },
-        { name: "Linux Terminal", icon: ICON_NAMES.TERMINAL_LINUX },
-        { name: "AWS", icon: ICON_NAMES.AWS },
         { name: "Next.js", icon: ICON_NAMES.NEXTJS },
-        { name: "Docker", icon: ICON_NAMES.DOCKER },
-        { name: "MySQL", icon: ICON_NAMES.MYSQL },
-        { name: "Django", icon: ICON_NAMES.DJANGO },
-        { name: "Kubernetes", icon: ICON_NAMES.KUBERNETES },
-        { name: "Postman", icon: ICON_NAMES.POSTMAN },
-        { name: "Azure", icon: ICON_NAMES.AZURE },
       ],
     },
   },
@@ -172,49 +134,48 @@ const config: Config = {
   jsonLdPerson: {
     "@context": "http://schema.org",
     "@type": "Person",
-    "@id": "https://v0.1chooo.com/#person",
-    name: "Chun-Ho (Hugo) Lin",
-    givenName: "Chun-Ho",
-    familyName: "Lin",
-    additionalName: "Hugo",
+    "@id": "https://lucas-santos.github.io/#person",
+    name: "Lucas Santos",
+    givenName: "Lucas",
+    familyName: "Santos",
+    additionalName: "",
     gender: "male",
-    birthPlace: "New Taipei, TW",
+    birthPlace: "",
     nationality: {
       "@type": "Country",
-      name: "Taiwan",
-      alternateName: "TW",
+      name: "Brazil",
+      alternateName: "BR",
     },
     alumniOf: [
       {
         "@type": "CollegeOrUniversity",
-        name: "University of Southern California",
-        sameAs: "https://usc.edu",
+        name: "Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte",
+        sameAs: "https://portal.ifrn.edu.br/",
       },
       {
         "@type": "CollegeOrUniversity",
-        name: "National Central University",
-        sameAs: "https://www.ncu.edu.tw/",
+        name: "Trybe",
+        sameAs: "https://www.betrybe.com/",
       },
     ],
-    jobTitle: "Software Engineer",
-    skills: "Software Engineering, Web Development, Open Source",
-    image: "https://v0.1chooo.com/images/profile.webp",
-    url: "https://v0.1chooo.com",
+    jobTitle: "Mobile Developer",
+    skills: "React Native, React.js, Next.js, TypeScript, JavaScript",
+    image: "https://lucas-santos.github.io/images/profile.svg",
+    url: "https://lucas-santos.github.io",
     sameAs: [
-      "https://www.linkedin.com/in/1chooo/",
-      "http://github.com/1chooo",
-      "https://medium.com/@1chooo",
+      "https://www.linkedin.com/in/lucas-santosengsoft",
+      "https://github.com/lucas-santos",
     ],
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Los Angeles",
-      addressRegion: "CA",
-      addressCountry: "USA",
+      addressLocality: "Natal",
+      addressRegion: "RN",
+      addressCountry: "Brazil",
     },
   },
   giscusConfig: {
     id: "comments",
-    repo: "1chooo/1chooo.com",
+    repo: "lucas-santos/lucas-santos.github.io",
     repoId: process.env.NEXT_PUBLIC_GISCUS_REPO_ID || "",
     category: "General",
     categoryId: process.env.NEXT_PUBLIC_GISCUS_CONFIG_CATEGORY_ID || "",
@@ -240,74 +201,48 @@ const config: Config = {
         userAgent: "*",
       },
     ],
-    sitemap: "https://v0.1chooo.com/sitemap.xml",
-    host: "https://v0.1chooo.com",
+    sitemap: "https://lucas-santos.github.io/sitemap.xml",
+    host: "https://lucas-santos.github.io",
   },
-  llmsTxtContent: `# 1chooo.com
+  llmsTxtContent: `# Lucas Santos
 
 ## Section Name
 
-- [About](https://v0.1chooo.com): A brief introduction to the site and its creator, showcasing skills and interests.
-- [Resume](https://v0.1chooo.com/resume): A detailed resume highlighting professional experience, education, and skills.
-- [Blog](https://v0.1chooo.com/blog): A collection of articles and tutorials on web development, programming, and technology.
-- [Project](https://v0.1chooo.com/project): Showcases various projects and contributions.
+- [About](https://lucas-santos.github.io): A brief introduction to Lucas Santos, mobile developer.
+- [Resume](https://lucas-santos.github.io/resume): A detailed resume highlighting professional experience, education, and skills.
 
 ## Optional
 
-- [Source Code](https://github.com/1chooo/portfolio): The source code for the 1chooo.com website is available on GitHub.
+- [Source Code](https://github.com/lucas-santos/lucas-santos.github.io): The source code for this website is available on GitHub.
 `,
-  llmsFullTxtContent: `# 1chooo.com
+  llmsFullTxtContent: `# Lucas Santos
 
 ## Section Name
 
-- [About](https://v0.1chooo.com): A brief introduction to the site and its creator, showcasing skills and interests.
-- [Resume](https://v0.1chooo.com/resume): A detailed resume highlighting professional experience, education, and skills.
-- [Blog](https://v0.1chooo.com/blog): A collection of articles and tutorials on web development, programming, and technology.
-- [Project](https://v0.1chooo.com/project): Showcases various projects and contributions.
+- [About](https://lucas-santos.github.io): A brief introduction to Lucas Santos, mobile developer.
+- [Resume](https://lucas-santos.github.io/resume): A detailed resume highlighting professional experience, education, and skills.
 
 ## Optional
 
-- [Source Code](https://github.com/1chooo/portfolio): The source code for the 1chooo.com website is available on GitHub.
+- [Source Code](https://github.com/lucas-santos/lucas-santos.github.io): The source code for this website is available on GitHub.
 `,
   techStacks: {
-    frontend: [
-      "typescript",
-      "react",
-      "nextjs",
-      "tailwindcss",
-      "vitest",
-      "shadcnui",
-      "googleanalytics",
-    ],
-    backend: [
-      "python",
-      "aws",
-      "django",
-      "golang",
-      "docker",
-      "fastapi",
-      "github",
-    ],
-    database: ["redis", "supabase", "firebase", "dynamodb"],
+    frontend: ["typescript", "javascript", "react", "nextjs"],
+    tools: ["github", "git"],
   },
   rssOptions: {
-    title: "Chun-Ho (Hugo) Lin - 1chooo",
+    title: "Lucas Santos",
     description:
-      "I am a first-year M.S. student in Computer Science at the [USC Viterbi School of Engineering](https://viterbischool.usc.edu/) ✌️. I graduated with a B.S. in Atmospheric Sciences from the [National Central University](https://www.ncu.edu.tw/) 🐿️.",
-    site_url: "https://v0.1chooo.com",
-    feed_url: "https://v0.1chooo.com/rss.xml",
-    language: "en-US",
-    docs: "https://docs.1chooo.com",
-    image_url: "https://docs.1chooo.com/images/cover-with-1chooo-com.png",
-    managingEditor: "hugo@1chooo.com (Chun-Ho Lin)",
-    webMaster: "hugo@1chooo.com (Chun-Ho Lin)",
-    copyright: "© 2025 Chun-Ho (Hugo) Lin",
-    categories: [
-      "Technology",
-      "Software Development",
-      "Web Development",
-      "Programming",
-    ],
+      "Desenvolvedor mobile com foco em React Native, atuando no desenvolvimento e manutenção de aplicativos corporativos.",
+    site_url: "https://lucas-santos.github.io",
+    feed_url: "https://lucas-santos.github.io/rss.xml",
+    language: "pt-BR",
+    docs: "https://lucas-santos.github.io",
+    image_url: "https://lucas-santos.github.io/images/opengraph-image.png",
+    managingEditor: "lucassantos_dev@outlook.com (Lucas Santos)",
+    webMaster: "lucassantos_dev@outlook.com (Lucas Santos)",
+    copyright: "© 2026 Lucas Santos",
+    categories: ["Technology", "Mobile Development", "Software Development"],
   },
 };
 

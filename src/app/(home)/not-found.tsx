@@ -57,7 +57,7 @@ function NotFound() {
           <p>
             Still having trouble?{" "}
             <Link
-              href="mailto:hugo@1chooo.com"
+              href="mailto:lucassantos_dev@outlook.com"
               className="text-primary underline underline-offset-2"
             >
               Contact me
