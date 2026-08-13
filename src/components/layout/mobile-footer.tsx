@@ -24,17 +24,19 @@ function MobileFooter({
   status,
   contacts,
 }: MobileFooterProps) {
+  const displayName =
+    preferredName && preferredName !== firstName
+      ? `${firstName} (${preferredName}) ${lastName}`
+      : `${firstName} ${lastName}`;
+
   return (
     <footer className={styles.mobileFooterWrapper}>
       <article className={styles.mobileFooterArticle}>
         <aside className={styles.sidebarFooter} data-sidebar-footer>
           <div className={styles.sidebarFooterInfo}>
             <div>
-              <h1
-                className={styles.name}
-                title={`${firstName} (${preferredName}) ${lastName}`}
-              >
-                {firstName} ({preferredName}) {lastName}
+              <h1 className={styles.name} title={displayName}>
+                {displayName}
               </h1>
               <p className={styles.title}>{status}</p>
             </div>

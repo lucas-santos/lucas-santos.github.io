@@ -3,7 +3,7 @@ import { ICON_NAMES } from "@/components/icons";
 import { Config } from "@/types/config";
 
 const config: Config = {
-  avatar: "/images/profile.svg",
+  avatar: "/images/profile.jpg",
   title: "Lucas Santos",
   description:
     "Desenvolvedor mobile com foco em React Native, atuando no desenvolvimento e manutenção de aplicativos corporativos. Experiência com TypeScript, integração de APIs REST e React/Next.js.",
@@ -160,7 +160,7 @@ const config: Config = {
     ],
     jobTitle: "Mobile Developer",
     skills: "React Native, React.js, Next.js, TypeScript, JavaScript",
-    image: "https://lucas-santos.github.io/images/profile.svg",
+    image: "https://lucas-santos.github.io/images/profile.jpg",
     url: "https://lucas-santos.github.io",
     sameAs: [
       "https://www.linkedin.com/in/lucas-santosengsoft",

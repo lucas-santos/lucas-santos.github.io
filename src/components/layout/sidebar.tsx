@@ -26,14 +26,19 @@ function Sidebar({
   status,
   contacts,
 }: SidebarProps) {
+  const displayName =
+    preferredName && preferredName !== firstName
+      ? `${firstName} (${preferredName}) ${lastName}`
+      : `${firstName} ${lastName}`;
+
   return (
     <aside className={styles.sidebar} data-sidebar>
       <div className={styles.sidebarInfo}>
         <figure className={styles.avatarBox}>
           <Image
-            id={`${firstName} (${preferredName}) ${lastName}`}
+            id={displayName}
             src={avatar}
-            alt={`${firstName} (${preferredName}) ${lastName}`}
+            alt={displayName}
             width={150}
             height={150}
             quality={50}
@@ -42,11 +47,8 @@ function Sidebar({
           />
         </figure>
         <div>
-          <h1
-            className={styles.name}
-            title={`${firstName} (${preferredName}) ${lastName}`}
-          >
-            {firstName} ({preferredName}) {lastName}
+          <h1 className={styles.name} title={displayName}>
+            {displayName}
           </h1>
           <p className={styles.title}>{status}</p>
         </div>

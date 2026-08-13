@@ -4,6 +4,9 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    # Rebuild daily so new dev.to posts show up without a code push.
+    - cron: "0 6 * * *"
 
 permissions:
   contents: read

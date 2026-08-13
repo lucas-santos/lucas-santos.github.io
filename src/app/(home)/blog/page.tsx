@@ -2,20 +2,18 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 import PageTitle from "@/components/page-title";
-import { ViewTransitionsProgressBarLink } from "@/components/progress-bar";
 
 import Balancer from "react-wrap-balancer";
 
 import config from "@/config";
 
-import { getBlogPosts } from "@/lib/api/mdx";
-import type { BlogPost } from "@/types/post";
-import { BLOG_DIRECTORY } from "@/lib/constants";
+import { getDevToArticles } from "@/lib/api/devto";
 
 import { cn } from "@/lib/utils";
 
-
 import styles from "@/styles/blog.module.css";
+
+export const dynamic = "force-static";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -24,89 +22,52 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-function getCategories(posts: BlogPost[]): Record<string, number> {
-  const categories: Record<string, number> = Object.create(null);
-
-  for (const post of posts) {
-    const category = post.category;
-
-    categories[category] ??= 0;
-    categories[category] += 1;
-  }
-
-  return categories;
-}
-
-export default async function MdxBlog() {
-  let allPosts: BlogPost[];
-
-  try {
-    allPosts = getBlogPosts(BLOG_DIRECTORY);
-  } catch (error) {
-    console.error("Failed to load project posts:", error);
-    allPosts = [];
-  }
-
-  const categories = getCategories(allPosts);
-
-  const blogCategories = Object.keys(categories);
+export default async function Blog() {
+  const posts = await getDevToArticles();
 
   return (
     <article>
       <PageTitle title="Blog" />
 
-      <section className={cn(styles.blog)}>
-        <ul className={styles.filters}>
-          <li>
-            <ViewTransitionsProgressBarLink
-              href="/blog"
-              className={cn(styles.filterButton, styles.filterButtonActive)}
-            >
-              All ({allPosts.length})
-            </ViewTransitionsProgressBarLink>
-          </li>
-
-          {blogCategories.map((category, index) => (
-            <li key={index}>
-              <ViewTransitionsProgressBarLink
-                href={`/blog/category/${encodeURIComponent(category.toLowerCase())}`}
-                className={cn(styles.filterButton)}
-              >
-                {category} ({categories[category]})
-              </ViewTransitionsProgressBarLink>
-            </li>
-          ))}
-        </ul>
-      </section>
+      <p className="mb-6 text-sm text-light-gray">
+        Posts published on{" "}
+        <a
+          href="https://dev.to/lucassantos_dev"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline"
+        >
+          dev.to
+        </a>
+        .
+      </p>
 
       <section className={cn(styles.blog)}>
         <ul className={cn(styles.cards)}>
-          {allPosts.map((post: BlogPost) => (
-            <li className={cn(styles.card)} key={post.slug}>
-              <ViewTransitionsProgressBarLink
-                href={`/blog/${post.slug}`}
-                rel="noopener noreferrer"
-              >
+          {posts.map((post) => (
+            <li className={cn(styles.card)} key={post.id}>
+              <a href={post.url} target="_blank" rel="noopener noreferrer">
                 <figure className={cn(styles.bannerBox)}>
                   <Image
                     src={
-                      post.thumbnail ||
-                      "https://lucas-santos.github.io/images/opengraph-image.png"
+                      post.coverImage ||
+                      "https://lucas-santos.github.io/images/opengraph-image"
                     }
-                    alt={post.title || "Blog post image"}
+                    alt={post.title}
                     width={960}
                     height={540}
                     priority={false}
-                    placeholder="blur"
                     loading="eager"
-                    blurDataURL="https://lucas-santos.github.io/images/opengraph-image.png"
+                    unoptimized
                   />
                 </figure>
                 <div className={cn(styles.content)}>
                   <div className={cn(styles.meta)}>
-                    <p className={cn(styles.category)}>
-                      {post.category.toUpperCase()}
-                    </p>
+                    {post.tags.length > 0 && (
+                      <p className={cn(styles.category)}>
+                        {post.tags[0].toUpperCase()}
+                      </p>
+                    )}
                     <h3 className={cn(styles.title)}>
                       <Balancer>{post.title}</Balancer>
                     </h3>
@@ -119,10 +80,26 @@ export default async function MdxBlog() {
                     })}
                   </time>
                 </div>
-              </ViewTransitionsProgressBarLink>
+              </a>
             </li>
           ))}
         </ul>
+
+        {posts.length === 0 && (
+          <p className="text-sm text-light-gray">
+            Couldn&apos;t load posts from dev.to right now. Check back later
+            or visit{" "}
+            <a
+              href="https://dev.to/lucassantos_dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline"
+            >
+              dev.to/lucassantos_dev
+            </a>{" "}
+            directly.
+          </p>
+        )}
       </section>
     </article>
   );

@@ -16,6 +16,8 @@ const CODE_OF_CONDUCT_PATH = join(
   "code-of-conduct.mdx",
 );
 
+const DEVTO_USERNAME = "lucassantos_dev";
+
 export {
   BUILD_TIME,
   TERMS_PATH,
@@ -24,4 +26,5 @@ export {
   PROJECT_DIRECTORY,
   RESUME_DIRECTORY,
   CODE_OF_CONDUCT_PATH,
+  DEVTO_USERNAME,
 };

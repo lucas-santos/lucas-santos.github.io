@@ -117,43 +117,7 @@ const NavBar = () => {
           </ViewTransitionsProgressBarLink>
         </li>
 
-        {/* Project and Blog are hidden until there's real content to show.
-        <li className="py-2 navbar-item">
-          <ViewTransitionsProgressBarLink
-            href="/project"
-            onClick={() => handleNavClick("Project", "/project")}
-            onMouseEnter={() => setHoveredPath("/project")}
-            onMouseLeave={() => setHoveredPath(null)}
-            className="relative block px-2 py-2 text-sm md:text-base lg:text-base duration-300 transition-colors hover:!text-orange-yellow-crayola"
-            style={{
-              color: isActive("/project") ? "#FFF" : "#888888",
-              fontWeight: isActive("/project") ? 700 : 500,
-            }}
-          >
-            Project
-
-            {hoveredPath === "/project" && (
-              <motion.div
-                layoutId="hover-bg"
-                className="absolute inset-0 bg-white/10 rounded-xl -z-10"
-              />
-            )}
-
-            {isActive("/project") && (
-              <motion.div
-                layoutId="active"
-                className="absolute bottom-0 left-0 right-0 h-0.5 bg-orange-yellow-crayola"
-              />
-            )}
-
-            {hoveredPath === "/project" && (
-              <motion.div
-                layoutId="hover"
-                className="absolute bottom-0 left-0 right-0 h-0.5 bg-white"
-              />
-            )}
-          </ViewTransitionsProgressBarLink>
-        </li>
+        {/* Project is hidden until there's real content to show. */}
 
         <li className="py-2 navbar-item">
           <ViewTransitionsProgressBarLink
@@ -191,7 +155,6 @@ const NavBar = () => {
             )}
           </ViewTransitionsProgressBarLink>
         </li>
-        */}
 
         {/* <li className="py-2 navbar-item">
           <ViewTransitionsProgressBarLink
