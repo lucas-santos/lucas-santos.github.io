@@ -6,7 +6,7 @@ const config: Config = {
   avatar: "/images/profile.jpg",
   title: "Lucas Santos",
   description:
-    "Desenvolvedor mobile com foco em React Native, atuando no desenvolvimento e manutenção de aplicativos corporativos. Experiência com TypeScript, integração de APIs REST e React/Next.js.",
+    "Mobile developer focused on React Native, building and maintaining corporate applications. Experienced with TypeScript, REST API integration, and React/Next.js.",
   author: "Lucas Santos",
   keywords: [
     "Lucas Santos",
@@ -51,7 +51,7 @@ const config: Config = {
     ),
     title: "Lucas Santos",
     description:
-      "Desenvolvedor mobile com foco em React Native, atuando no desenvolvimento e manutenção de aplicativos corporativos. Experiência com TypeScript, integração de APIs REST e React/Next.js.",
+      "Mobile developer focused on React Native, building and maintaining corporate applications. Experienced with TypeScript, REST API integration, and React/Next.js.",
     authors: [{ name: "Lucas Santos" }],
     creator: "Lucas Santos",
     keywords: [
@@ -67,9 +67,9 @@ const config: Config = {
       type: "website",
       siteName: "Lucas Santos",
       title: "Lucas Santos",
-      locale: "pt_BR",
+      locale: "en_US",
       description:
-        "Desenvolvedor mobile com foco em React Native, atuando no desenvolvimento e manutenção de aplicativos corporativos.",
+        "Mobile developer focused on React Native, building and maintaining corporate applications.",
       images: [
         {
           url: "/opengraph-image",
@@ -85,7 +85,7 @@ const config: Config = {
       card: "summary_large_image",
       title: "Lucas Santos",
       description:
-        "Desenvolvedor mobile com foco em React Native, atuando no desenvolvimento e manutenção de aplicativos corporativos.",
+        "Mobile developer focused on React Native, building and maintaining corporate applications.",
       images: [
         {
           url: "/twitter-image",
@@ -233,10 +233,10 @@ const config: Config = {
   rssOptions: {
     title: "Lucas Santos",
     description:
-      "Desenvolvedor mobile com foco em React Native, atuando no desenvolvimento e manutenção de aplicativos corporativos.",
+      "Mobile developer focused on React Native, building and maintaining corporate applications.",
     site_url: "https://lucas-santos.github.io",
     feed_url: "https://lucas-santos.github.io/rss.xml",
-    language: "pt-BR",
+    language: "en-US",
     docs: "https://lucas-santos.github.io",
     image_url: "https://lucas-santos.github.io/images/opengraph-image.png",
     managingEditor: "lucassantos_dev@outlook.com (Lucas Santos)",
