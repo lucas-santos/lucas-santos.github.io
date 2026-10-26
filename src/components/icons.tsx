@@ -68,6 +68,8 @@ import {
   TbBrandAstro,
   TbBrandTerraform,
   TbPhotoSquareRounded,
+  TbBrandReactNative,
+  TbBrandNodejs,
 } from "react-icons/tb";
 
 import { VCardIconType } from "@/types/config";
@@ -118,6 +120,8 @@ export enum ICON_NAMES {
   ZAP = "zap",
   EYE_LU = "eye-lu",
   ARROW_RIGHT = "arrow-right",
+  REACT_NATIVE = "react-native",
+  NODEJS = "nodejs",
 }
 
 export const icons: Record<ICON_NAMES, VCardIconType> = {
@@ -166,6 +170,8 @@ export const icons: Record<ICON_NAMES, VCardIconType> = {
   [ICON_NAMES.ZAP]: LuZap,
   [ICON_NAMES.EYE_LU]: LuEye,
   [ICON_NAMES.ARROW_RIGHT]: ArrowRightIcon,
+  [ICON_NAMES.REACT_NATIVE]: TbBrandReactNative,
+  [ICON_NAMES.NODEJS]: TbBrandNodejs,
 };
 
 // Updated return type to include undefined

@@ -6,14 +6,16 @@ const config: Config = {
   avatar: "/images/profile.jpg",
   title: "Lucas Santos",
   description:
-    "Mobile developer focused on React Native, building and maintaining corporate applications. Experienced with TypeScript, REST API integration, and React/Next.js.",
+    "Mobile developer focused on React Native and Expo, building and shipping corporate apps end to end — from navigation, local persistence, and global state to automated testing, store publishing, and CI/CD. Also works with React/Next.js on the web and Node.js (Fastify, NestJS) on the backend, with TypeScript throughout.",
   author: "Lucas Santos",
   keywords: [
     "Lucas Santos",
     "Mobile Developer",
     "React Native",
+    "Expo",
     "React.js",
     "Next.js",
+    "Node.js",
     "TypeScript",
   ],
   status: "Building mobile apps 📱",
@@ -51,15 +53,17 @@ const config: Config = {
     ),
     title: "Lucas Santos",
     description:
-      "Mobile developer focused on React Native, building and maintaining corporate applications. Experienced with TypeScript, REST API integration, and React/Next.js.",
+      "Mobile developer focused on React Native and Expo, building and shipping corporate apps end to end — from navigation, local persistence, and global state to automated testing, store publishing, and CI/CD. Also works with React/Next.js on the web and Node.js (Fastify, NestJS) on the backend, with TypeScript throughout.",
     authors: [{ name: "Lucas Santos" }],
     creator: "Lucas Santos",
     keywords: [
       "Lucas Santos",
       "Mobile Developer",
       "React Native",
+      "Expo",
       "React.js",
       "Next.js",
+      "Node.js",
       "TypeScript",
     ],
     openGraph: {
@@ -69,7 +73,7 @@ const config: Config = {
       title: "Lucas Santos",
       locale: "en_US",
       description:
-        "Mobile developer focused on React Native, building and maintaining corporate applications.",
+        "Mobile developer focused on React Native and Expo, shipping apps end to end — also React/Next.js on the web and Node.js on the backend.",
       images: [
         {
           url: "/opengraph-image",
@@ -85,7 +89,7 @@ const config: Config = {
       card: "summary_large_image",
       title: "Lucas Santos",
       description:
-        "Mobile developer focused on React Native, building and maintaining corporate applications.",
+        "Mobile developer focused on React Native and Expo, shipping apps end to end — also React/Next.js on the web and Node.js on the backend.",
       images: [
         {
           url: "/twitter-image",
@@ -121,8 +125,10 @@ const config: Config = {
         { name: "JavaScript", icon: ICON_NAMES.JAVASCRIPT },
       ],
       frameworks: [
+        { name: "React Native", icon: ICON_NAMES.REACT_NATIVE },
         { name: "React", icon: ICON_NAMES.REACT },
         { name: "Next.js", icon: ICON_NAMES.NEXTJS },
+        { name: "Node.js", icon: ICON_NAMES.NODEJS },
       ],
     },
   },
@@ -159,7 +165,8 @@ const config: Config = {
       },
     ],
     jobTitle: "Mobile Developer",
-    skills: "React Native, React.js, Next.js, TypeScript, JavaScript",
+    skills:
+      "React Native, Expo, React.js, Next.js, Node.js, TypeScript, JavaScript",
     image: "https://lucas-santos.github.io/images/profile.jpg",
     url: "https://lucas-santos.github.io",
     sameAs: [
@@ -228,12 +235,13 @@ const config: Config = {
 `,
   techStacks: {
     frontend: ["typescript", "javascript", "react", "nextjs"],
-    tools: ["github", "git"],
+    backend: ["nodejs"],
+    tools: ["git", "github", "docker", "vitest"],
   },
   rssOptions: {
     title: "Lucas Santos",
     description:
-      "Mobile developer focused on React Native, building and maintaining corporate applications.",
+      "Mobile developer focused on React Native and Expo, shipping apps end to end — also React/Next.js on the web and Node.js on the backend.",
     site_url: "https://lucas-santos.github.io",
     feed_url: "https://lucas-santos.github.io/rss.xml",
     language: "en-US",
